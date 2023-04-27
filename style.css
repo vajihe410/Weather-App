@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #0a1f44;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 100vh;
+}
+section{
+    margin-left: 36px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 200px;
+    margin-top: 36px;
+}
+.search h1{
+    color:white;
+    font-weight: bold;
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+.search input{
+    height: 40px;
+    width: 400px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 8px;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding-left: 4px;
+    padding-bottom: 2px;
+    background:none;
+    color: white;
+}
+.search input::placeholder{
+    color: white;
+}
+.search button{
+    width: 400px;
+    height: 30px;
+    background-color:#ff1e42;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 8px;
+    border-radius: 4px;
+    transition: all 0.3 ease-in;
+    font-size: 14px;
+}
+.search button:hover{
+    background-color: #c3112d;
+}
+.massage{
+    margin-top: 8px;
+    color: white;
+}
+ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns:repeat(6,1fr) ;
+    grid-gap: 10px;
+}
+.city{
+    background-color: white;
+    width:200px;
+    height: 220px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.city span,.city figcaption{
+    color: #53627c;
+}
+.city span:last-child{
+    font-size: 12px;
+    background-color: #ff8c00;
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 13px;
+    color: white;
+}
+.city p{
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 4px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.city::after{
+    content:"" ;
+    width: 90%;
+    height: 50px;
+    background-color: #53627c;
+    opacity: 0.3;
+    position: absolute;
+    bottom: -10px;
+    left: 8px;
+    border-radius: 16px;
+    z-index: -1;
+}
